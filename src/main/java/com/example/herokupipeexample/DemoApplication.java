@@ -3,14 +3,10 @@ package com.example.herokupipeexample;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
 public class DemoApplication {
 
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 }
-
-

@@ -14,7 +14,7 @@ public class CustomerController {
     private CustomerRepository customerRepository;
 
     public CustomerController(CustomerRepository customerRepository) {
-      this.customerRepository = customerRepository;
+        this.customerRepository = customerRepository;
     }
 
     @RequestMapping("/")
@@ -28,9 +28,9 @@ public class CustomerController {
     }
 
     @PostMapping("/")
-    	Customer newCustomer(@RequestBody Customer customer) {
+    Customer newCustomer(@RequestBody Customer customer) {
         System.out.println(customer);
-    		return customerRepository.save(customer);
-    	}
+        return customerRepository.save(customer);
+    }
 
 }
